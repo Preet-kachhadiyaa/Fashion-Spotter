@@ -76,6 +76,7 @@ ul:hover a:hover {
   color: black;
   border-radius: 0.3rem;
   font-size: 14px;
+  font-weight: 600;
 }
 
 .btn1:hover {
@@ -514,15 +515,14 @@ ul:hover a:hover {
   }
 }
 
-.head{
-  margin-top: 45px;
+.btn4{
+  margin-left: 680px;
 }
-
-.team-w{
-  display: flex;
-  margin-left: 12px;
+@media only screen and (max-width:400px) {
+  .btn4{
+    margin-left: 107px;
+  }
 }
-
 .center{
   display: flex;
   justify-content: center;
@@ -569,3 +569,4 @@ ul:hover a:hover {
     margin-left: 52px;
   }
 }
+

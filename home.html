@@ -55,13 +55,11 @@
             Shoes Designed For Every Age People. <br />
             Shop Now For Experiance High-Qulity Walking..
           </p>
-          <div class="price">
-            <span class="Dis"> -32% </span>
-            <span class="price_num ml-2"> ₹12,290 </span> <br />
-            <span class="full"> M.R.P. : <del> ₹16,222 </del></span>
+          <div id="p">
+
           </div>
 
-          <a href="" class="btn btn1 px-3 mt-3"> <b> Buy Now.. </b> </a>
+          <button class="btn btn1 px-3 mt-3" onclick="showprice()">Buy Now..</button>
         </div>
       </div>
     </div>
@@ -603,4 +601,16 @@
         $('.more').show();
       })
   })
+
+function showprice(){
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "demo1.html");
+  xhr.send();
+  xhr.onreadystatechange = function () {
+    if (this.readyState == 4) {
+      document.getElementById("p").innerHTML = this.responseText;
+      $('.btn1').hide();
+    }
+  }
+}
 </script>

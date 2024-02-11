@@ -54,12 +54,11 @@
             <b><span id="span"> Elevant </span> Your <br />Walking With <br />
               <span id="span">Premium</span> Shoes.</b>
           </h1>
-          <p>
-            Discover Our Selection Of High-Qulity <br />
-            Shoes Designed For Every Age People. <br />
-            Shop Now For Experiance High-Qulity Walking..
+          <p id="txt">
+
           </p>
-          <a href="" class="btn btn1 px-3"> <b> Buy Now.. </b> </a>
+          <!-- <a href="" class="btn btn1 px-3" onClick="gettxt()"> <b> Buy Now.. </b> </a> -->
+          <button class=" btn1 px-3" onClick="gettxt()">buy Now..</button>
         </div>
       </div>
     </div>
@@ -599,7 +598,17 @@
       $('.less').hide();
       $('.more').show();
     })
-
-    
   })
+
+  function gettxt() {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", "demo.txt");
+    xhr.send();
+    xhr.onreadystatechange = function () {
+      if (this.readyState == 4) {
+        document.getElementById("txt").innerHTML = this.responseText;
+        $('.btn1').hide();
+      }
+    }
+  }
 </script>
