@@ -1,0 +1,571 @@
+* {
+  margin: 0px;
+  padding: 0%;
+  font-family: "Ubuntu";
+  font-weight: bolder;
+}
+
+/*--------------------------------Nav-bar--------------------------*/
+
+.navbar-nav {
+  margin: auto;
+  justify-content: space-between;
+}
+
+.nav-link {
+  margin-left: 57px;
+  font-size: 18px;
+}
+
+ul:hover a {
+  color: white;
+}
+
+ul:hover a:hover {
+  box-shadow: 0 1.5px 0 0 currentColor;
+}
+
+.nav-link:hover {
+  transform: translateY(-3px);
+  transition: all 0.3s ease-in;
+}
+
+.btn2 {
+  background-color: rgb(38, 38, 20);
+  color: white;
+}
+
+.btn2:hover {
+  background-color: rgb(23, 23, 11);
+  color: white;
+  transition: all 1.1s ease;
+}
+
+/* -----------------------------------  Body -------------------------- */
+
+.img {
+  height: 100vh;
+  background-image: url(/Images/bg-shoes.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home {
+  display: flex;
+  padding-left: 60px;
+  padding-top: 110px;
+  padding-bottom: 200px;
+  color: white;
+}
+
+.home-text h1 {
+  font-size: 2.7rem;
+}
+
+.home-text p {
+  font-size: 0.989rem;
+}
+
+.home-text #span {
+  color: goldenrod;
+}
+
+.btn1 {
+  padding: 10px 18px;
+  background-color: goldenrod;
+  color: black;
+  border-radius: 0.3rem;
+  font-size: 14px;
+}
+
+.btn1:hover {
+  color: black;
+  transform: translateY(-1px);
+  transition: 1.1s ease;
+}
+
+/* ------------------------------Top Seller-------------------------------- */
+
+.black {
+  background-color: black;
+}
+
+.size {
+  margin-left: 25px;
+}
+
+.Dis {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ff0000;
+}
+
+.full {
+  margin-right: 55px;
+}
+
+.price {
+  margin-top: 19px;
+  margin-right: 176px;
+}
+
+.price .price_num {
+  font-size: 28px;
+  font-weight: 600;
+  color: #707070;
+}
+
+.price .price_letter {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: -4px;
+  color: #707070;
+}
+
+.button {
+  position: relative;
+  height: 50px;
+  width: 393px;
+  border-radius: 25px;
+  margin-top: 22px;
+  overflow: hidden;
+}
+
+.button .button-layer {
+  position: absolute;
+  height: 100%;
+  width: 300%;
+  left: -100%;
+  background-image: linear-gradient(135deg, #9708cc, #43cbff, #9708cc, #43cbff);
+  transition: all 0.4s ease;
+  border-radius: 25px;
+}
+
+.button:hover .button-layer {
+  left: 0;
+}
+
+.button button {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 400px) {
+  .button {
+    position: relative;
+    height: 50px;
+    width: 304px;
+    border-radius: 25px;
+    margin-top: 34px;
+    overflow: hidden;
+  }
+
+
+  .size {
+    margin-left: 13px;
+  }
+
+  .Dis {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ff0000;
+    padding-right: 36px;
+  }
+
+  .full {
+    margin-right: -20px;
+  }
+}
+
+/* ---------------------------------New & Trending-------------------------------- */
+
+.hot {
+  color: #B12704;
+}
+
+.card-scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.card-scroll {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+
+.c1 {
+  width: 400px;
+}
+
+.c1>img {
+  height: 360px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.price1 {
+  background-color: black;
+  border-radius: 29px;
+  height: 45px;
+  width: 340px;
+  margin-left: 8px;
+  font-size: 18px;
+  color: white;
+  padding-top: 8px;
+}
+
+.deal {
+  background-color: #B12704;
+  color: #fff;
+  margin-left: 84px;
+  margin-right: 85px;
+  height: 35px;
+  padding-top: 5px;
+}
+
+.out {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.outlet {
+  background-color: #333;
+}
+
+.out>p {
+  margin-left: 41px;
+  margin-top: 14px;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 400px) {
+  .out {
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .out>p {
+    margin-left: -3px;
+  }
+}
+
+/* ----------------------------Sign-In---------------------------- */
+
+.img4 {
+  background-image: url(/Images/bg-jordan.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-position: 55%;
+}
+
+/* .left img{
+  display: inline;
+  position: absolute;
+  left: 21px; 
+  height: 172px;
+  width: 255px;
+  padding-top: 25px;
+} */
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  margin-top: 53px;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(9px);
+  border: 1px solid #fff;
+  border-radius: 33px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.login h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: rgb(240, 173, 5);
+}
+
+.login .inputbox input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  font-size: 1.25em;
+  color: rgb(9, 9, 9);
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.login .inputbox input::placeholder {
+  color: rgb(5, 5, 5);
+  font-size: 17px;
+}
+
+#btn {
+  position: relative;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgb(240, 173, 5);
+  font-size: 1.25em;
+  font-weight: 500;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: rgb(191, 143, 22);
+  transform: translateY(-2px);
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-content a {
+  font-size: 1.25em;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.bottom-content a:hover {
+  color: rgb(212, 189, 13);
+  transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 400px) {
+  .login {
+    width: 345px;
+  }
+}
+
+/* ---------------------------------Sign-up--------------------------- */
+.img5 {
+  background-image: url(/Images/bg-signup1.webp);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-position: 55%;
+}
+
+/* -------------------------------Product-------------------------------- */
+
+.top {
+  margin-top: 54px;
+}
+
+.button1 {
+  position: relative;
+  height: 50px;
+  width: 326px;
+  border-radius: 25px;
+  margin-top: 22px;
+  overflow: hidden;
+}
+
+.button1 .button-layer1 {
+  position: absolute;
+  height: 100%;
+  width: 300%;
+  left: -100%;
+  background-image: linear-gradient(135deg, #9708cc, #43cbff, #9708cc, #43cbff);
+  transition: all 0.4s ease;
+  border-radius: 25px;
+}
+
+.button1:hover .button-layer1 {
+  left: 0;
+}
+
+.button1 button {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.price2 {
+  margin-top: 19px;
+  margin-right: 193px;
+}
+
+.price2 .price_num {
+  font-size: 28px;
+  font-weight: 600;
+  color: #707070;
+}
+
+/* ------------------Services--------------- */
+.font {
+  font-size: 34px;
+  padding-left: 126px;
+  color:black;
+}
+
+.bgc {
+  background-color: rgb(194, 229, 255);
+}
+
+@media only screen and (max-width:400px) {
+  .font {
+    font-size: 34px;
+    padding-left: 84px;
+    color:black;
+    padding-bottom: 20px;
+  }
+}
+
+.text {
+  font-size: 22px;
+  margin-top: 37px;
+}
+.text1 {
+  font-size: 23px;
+  margin-top: 100px;
+}
+
+
+/* -------------------Services-- form----------------------- */
+
+
+.delivery-logo {
+  font-size: 3rem;
+  padding-left: 117px;
+}
+.ser{
+  padding-left: 54px;
+  font-size: 25px;
+}
+.ser1{
+  padding-left: 71px;
+  font-size: 25px;
+}
+.find{
+  margin-left: 65px;
+}
+.bgc1{
+  background-color: #eef7f7;
+}
+
+@media only screen and (max-width:400px)  {
+  .delivery-logo {
+    font-size: 71px;
+    padding-left: 175px;
+  }
+  .ser{
+    padding-left: 111px;
+    font-size: 25px;
+  }
+  .ser1{
+    padding-left: 135px;
+    font-size: 25px;
+  }
+  .find{
+    margin-left: 42px;
+  } 
+}
+
+/* ---------------------About---------------- */
+.img6{
+  margin-left: 114px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width:400px) {
+  .img6{
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .text1{
+    margin-left: 10px;
+  }
+  .h1{
+    margin-left: 10px;
+  }
+}
+
+.head{
+  margin-top: 45px;
+}
+
+.team-w{
+  display: flex;
+  margin-left: 12px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center a{
+  height: 100px;
+  width: 100px;
+  background-color: #f5f6fa;
+  border-radius: 50px;
+  line-height: 113px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 1px 4px 2px 2px #dcdde1;
+}
+.center a i{
+  transition: all 0.2s linear;
+}
+.center a:hover i{
+  transform: scale(1.4);
+}
+.fa-facebook{
+  color: blue;
+}
+.fa-instagram{
+  color: #e84393;
+}
+.fa-youtube{
+  color: #e84118;
+}
+.fa-twitter{
+  color: #0097e6;
+}
+.text2 h1{
+  text-align: center;
+}
+.text2{
+  font-size: 30px;
+  margin-top: 70px;
+}
+
+@media only screen and (max-width:400px) {
+  .cen{
+    margin-left: 52px;
+  }
+}
