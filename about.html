@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./bootstrap.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -18,7 +18,7 @@
     <section>
         <div class="container-fluid mb-5">
             <div class="black">
-                <h1 class="text-4xl text-center text-capitalize mt-3 pt-5 text-white mb-3"><b>About-Us</b></h1>
+                <h1 class="text-4xl text-center text-capitalize mt-3 pt-5 text-white mb-3"><b><span>About </span>- Us</b></h1>
                 <hr class="w-25 mx-auto pb-5 border-white border-White mb-3">
             </div>
             <div class="row mb-5 bgc pt-5">
@@ -42,7 +42,7 @@
     <section class="text-gray-600 body-font">
         <div class="container bgc px-5 py-20 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
-                <h1 class="text-5xl font-medium title-font mb-4 text-gray-900 tracking-widest">Devloper Team</h1>
+                <h1 class="text-5xl font-medium title-font mb-4 text-gray-900 tracking-widest"><span>Devloper</span> Team</h1>
                 <hr class="w-25 mx-auto pb-5 border-dark border-dark">
             </div>
             <div class="flex flex-wrap -m-4">
@@ -88,53 +88,82 @@
     <!-- ------------------------------------------insta------------------------ -->
     <section>
         <div class="text2">
-            <h1>Follow Us:</h1>
+            <h1>Follow - Us On:</h1>
         </div>
-        <div class="center">
+        <div class="center mt-3">
             <a href="">
-                <i class="fa fa-2x fa-facebook"></i>
+                <i class="fa-brands fa-2x fa-facebook-f"></i>
             </a>
 
             <a href="">
-                <i class="fa fa-2x fa-twitter"></i>
+                <i class="fa-brands fa-2x fa-twitter"></i>
             </a>
 
             <a href="">
-                <i class="fa fa-2x fa-instagram"></i>
+                <i class="fa-brands fa-2x fa-instagram"></i>
             </a>
 
             <a href="">
-                <i class="fa fa-2x fa-youtube"></i>
+                <i class="fa-brands fa-2x fa-youtube"></i>
             </a>
 
         </div>
     </section>
 <!-- ----------------------------------- Out Let-------------------------------- -->
-<section>
-    <div class="outlet text-white py-3 mt-5">
-        <h1 class="text-4xl text-center my-3"> Ｆａｓｈｉｏｎ Ṧ𝒑𝖔†ʈ𝐞𝔯 </h1>
-        <h3 class="text-2xl text-center my-3 pt-3"> <b> Our - Outlets </b> </h3>
-        <hr class="w-25 mx-auto pb-2 border-white border-white" />
-        <div class="out">
-            <p>India</p>
-            <p>Brazil</p>
-            <p>Canada</p>
-            <p>Austrlia</p>
-            <p class="china">China</p>
-            <p class="france">France</p>
-            <p class="germany">Germany</p>
-            <p class="spain">Spain</p>
-            <p class="more">More.....</p>
-            <p class="less">Less.</p>
-        </div>
+<footer>
+    <div class="footer_main  pt-5 mt-5">
+      <div class="footer_tag">
+        <h2>Location</h2>
+        <p>Sri Lanka</p>
+        <p>USA</p>
+        <p>India</p>
+        <p>Japan</p>
+        <p class="mb-4">Italy</p>
+      </div>
+
+      <div class="footer_tag">
+        <h2 class="quicklink">Quick Link</h2>
+        <a href="home.html">
+          <p>Home</p>
+        </a>
+        <a href="services.html">
+          <p>Services</p>
+        </a>
+        <a href="contactus.html">
+          <p>Contact - Us</p>
+        </a>
+        <a href="#">
+          <p class="mb-4">About</p>
+        </a>
+      </div>
+
+      <div class="footer_tag">
+        <h2>Contact</h2>
+        <p>+94 12 3456 789</p>
+        <p>+94 25 5568456</p>
+        <p>FashionSpotter@gmail.com</p>
+        <p class="mb-4">FashionSpotte144r@gmail.com</p>
+      </div>
+
+      <div class="footer_tag">
+        <h2>Our Service</h2>
+        <p>Fast Delivery</p>
+        <p>Easy Payments</p>
+        <p class="mb-4">24 x 7 Service</p>
+      </div>
+
+      <div class="footer_tag">
+        <h2>Follows</h2>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in mb-4"></i>
+      </div>
     </div>
-</section>
-  <!-- ----------------------------------- End Out Let-------------------------------- -->
-  <hr class="border-dark pt-3">
-  <!-- ----------------------------Footer---------------------------- -->
-  <footer>
-    <p class="text-center black text-white py-2 mb-3">
-      &copy; 2005-2024 Fashionspotter.com , Inc. or its affiliates!
+    <!-- ----------------------------------- End Out Let-------------------------------- -->
+    <!-- ----------------------------Footer---------------------------- -->
+    <p class="end mb-2 pb-4">
+      Design by :<span><i class="fa-solid fa-face-grin"></i><span>Fashion-Spotter.Com</span></span>
     </p>
   </footer>
   <!-- ---------------------------- End Footer---------------------------- -->
@@ -150,31 +179,6 @@
 <!--......  JQUERY...... -->
 <script src="./jquey.js"></script>
 <script>
-  $(document).ready(function(){
-      $('.china').hide();
-      $('.france').hide();
-      $('.germany').hide();
-      $('.spain').hide();
-      $('.less').hide();
-
-      $('.more').click(function(){
-          $('.china').show();
-          $('.france').show();
-          $('.germany').show();
-          $('.spain').show();
-          $('.less').show();
-          $('.more').hide();
-      })
-      $('.less').click(function(){
-        $('.china').hide();
-        $('.france').hide();
-        $('.germany').hide();
-        $('.spain').hide();
-        $('.less').hide();
-        $('.more').show();
-      })
-  })
-
   function getcard(){
     let xhr = new XMLHttpRequest();
     xhr.open("GET", "card.html");
